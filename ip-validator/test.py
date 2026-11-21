@@ -1,5 +1,5 @@
-words = ["42", "hello", "7"]
+with open("sample.log", "rb") as f:
+    data = f.read()
 
-for word in words:
-    if word.isdigit():
-        print (word, "is a number")
+    print(data[:20])  # Print the first 20 bytes of the log file
+    print(len(data))  # Print the total length of the log file
